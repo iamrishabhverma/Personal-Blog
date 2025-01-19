@@ -1,0 +1,397 @@
+/* Styles for the body of the pages */
+body {
+    background-image: linear-gradient(white, #34495E);
+    background-color: black;
+    font-family: Verdana;
+    border: solid 10px #34495E;
+    border-radius: 7px;
+}
+
+/* Styles for the container id */
+#container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile class */
+.mobile {
+    display: none;
+}
+
+/* Desktop class */
+.desktop {
+    display: inline;
+}
+
+/* Styles for the header */
+header {
+    text-align: center;
+}
+
+/* Styles for the table */
+table {
+    padding: 10px;
+    float: right;
+    margin-right: 20em;
+    margin-top: 4em;
+}
+
+/* Styles for the navigation bar */
+nav {
+    margin-top: -1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0.5em 0;
+}
+
+nav li {
+    background-color: black;
+    border-radius: 2em;
+    margin: 0.3em;
+    padding: 0.4em;
+    list-style-type: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styles for the main content */
+main {
+    background-color: #E67E24;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 5%;
+    padding: 1em;
+    border-radius: 2em 0 2em 0;
+    opacity: 85%;
+}
+
+/* Styles for the footer */
+footer {
+    font-size: 0.7em;
+    margin-top: 2em;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Tablet class */
+.tablet {
+    display: none;
+}
+
+/* Fluid images */
+img {
+    max-width: 200px;
+    border-radius: 150px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+figure img {
+    float: right;
+    margin-top: -2em;
+    margin-bottom: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+/* Anchor tags inside main */
+main a {
+    background-color: #F2F4F4;
+    border-radius: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Styles for the aside element */
+aside {
+    right: 100px;
+    background-color: powderblue;
+    height: 50%;
+    width: 65%;
+    top: 0;
+    padding-top: 20px;
+    box-shadow: 1em 1em 10em 1px;
+}
+
+aside ul {
+    margin: 0;
+}
+
+/* Table heading and rows */
+tr, th {
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Heading 2 */
+h2 {
+    float: right;
+    margin-right: 10em;
+}
+
+/* Styles for iframe (YouTube video) */
+iframe {
+    float: right;
+    margin-right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+/* Media Query for tablet viewport (min-width: 720px) */
+@media only screen and (min-width: 720px) {
+    body {
+        background-color: black;
+        font-family: Verdana;
+        border: solid 10px #34495E;
+        border-radius: 7px;
+    }
+
+    #container {
+        background-color: #FAE5D3;
+    }
+
+    nav li {
+        display: block;
+        float: left;
+        width: 18%;
+        padding: 10px;
+        background-color: #F5CBA7;
+        border-radius: 10px;
+    }
+
+    main {
+        margin-top: 4em;
+        border-radius: 10px;
+    }
+
+    aside {
+        font-style: italic;
+    }
+
+    h2 {
+        text-align: left;
+        float: left;
+        box-shadow: 1em 1em 1em 1px;
+        color: white;
+        margin-right: 1em;
+    }
+
+    table {
+        display: inline;
+        padding: 10px;
+        margin-top: 4em;
+        margin-right: 40%;
+    }
+
+    .tablet {
+        display: block;
+        margin-top: -3em;
+        margin-bottom: -1em;
+    }
+
+    section {
+        padding-bottom: 3em;
+    }
+
+    section a {
+        background-color: transparent;
+        color: #1d1d1c;
+        font-weight: normal;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+    section {
+        background-color: white;
+        border-radius: 0 5em 5em 5em;
+        padding: 1.1em;
+        box-shadow: 0 0 0.5em #4c4f4d;
+        margin: 0.75em;
+    }
+
+    aside {
+        right: 0;
+        background-color: powderblue;
+        height: 50%;
+        width: 50%;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    table {
+        color: black;
+        margin-right: 40%;
+        margin-top: -1em;
+    }
+
+    tr, th {
+        padding: 2em;
+        border-style: solid;
+        border-color: black;
+    }
+
+    figure img {
+        float: right;
+        margin-top: -2em;
+        margin-bottom: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+}
+
+/* Media Query for desktop viewport (min-width: 1080px) */
+@media only screen and (min-width: 1080px) {
+    body {
+        background-color: black;
+        font-family: Verdana;
+        border: solid 10px #34495E;
+        border-radius: 7px;
+    }
+
+    #container {
+        background-color: #2980B9;
+    }
+
+    img {
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-bottom: -10px;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    nav {
+        float: right;
+        margin-top: -7em;
+        margin-right: 3em;
+        width: 65%;
+    }
+
+    table {
+        padding: 10px;
+        float: right;
+        margin-right: 20em;
+        margin-top: 4em;
+    }
+
+    nav ol {
+        margin: 1em;
+        margin-bottom: 2em;
+        padding-left: 0.5%;
+        padding-right: 10px;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        width: 20%;
+        background-color: white;
+    }
+
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;
+        text-shadow: 0.05em 0.05em #3d3d35;
+        font-style: unset;
+    }
+
+    nav li a:link {
+        color: black;
+    }
+
+    nav li a:visited {
+        color: #ccccff;
+    }
+
+    nav li a:hover {
+        color: #9d9d93;
+        font-style: italic;
+    }
+
+    nav li a:active {
+        color: red;
+    }
+
+    main {
+        background-color: #D0D3D4;
+    }
+
+    main p {
+        color: black;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    h2 {
+        color: white;
+        font-style: italic;
+    }
+
+    footer {
+        background-color: #2a2a2a;
+        margin-top: -0.2em;
+        padding: 2em;
+    }
+
+    aside {
+        right: 100px;
+        background-color: powderblue;
+        height: 50%;
+        width: 50%;
+        top: 0;
+        padding-top: 20px;
+        box-shadow: 1em 1em 10em 1px;
+    }
+
+    table {
+        color: black;
+        margin-right: 40%;
+        margin-top: -1em;
+    }
+
+    tr, th {
+        padding: 10px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    figure img {
+        float: right;
+        border: solid;
+        margin-top: 0;
+    }
+
+    iframe {
+        float: right;
+        margin-right: 0;
+    }
+}
